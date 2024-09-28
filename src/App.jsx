@@ -23,7 +23,6 @@ const App = () => (
           <Route path="/sports-hospitality" element={<SportsHospitality />} />
           <Route path="/online-education" element={<OnlineEducation />} />
           <Route path="/entrepreneurship" element={<Entrepreneurship />} />
-          <Route path="/newsletter-signup" element={<NewsletterSignup />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
