@@ -8,7 +8,6 @@ import TravelTools from "./pages/TravelTools";
 import SportsHospitality from "./pages/SportsHospitality";
 import OnlineEducation from "./pages/OnlineEducation";
 import Entrepreneurship from "./pages/Entrepreneurship";
-import NewsletterSignup from "./pages/NewsletterSignup";
 
 const queryClient = new QueryClient();
 
