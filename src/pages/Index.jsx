@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GlobeIcon, TrendingUpIcon, PlaneIcon, BookOpenIcon, BriefcaseIcon, TrophyIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Navigation from '../components/Navigation';
 
 const Index = () => {
   const variants = {
@@ -11,6 +12,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 text-white">
+      <Navigation />
       <div className="container mx-auto px-4 py-16">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -108,6 +110,7 @@ const InfoCard = ({ icon, title, description, buttonText, buttonColor, buttonLin
     <h2 className="text-2xl font-semibold mb-2">{title}</h2>
     <p className="text-justify">{description}</p>
     {buttonLink && buttonText && (
+      buttonLink.startsWith('http') ? (
       <a
         href={buttonLink}
         target="_blank"
@@ -116,6 +119,14 @@ const InfoCard = ({ icon, title, description, buttonText, buttonColor, buttonLin
       >
         {buttonText}
       </a>
+    ) : (
+      <Link
+        to={buttonLink}
+        className={`${buttonColor} mt-4 py-2 px-4 inline-block rounded text-white hover:opacity-80`}
+       >
+          {buttonText}
+        </Link>
+      )
     )}
   </div>
 );
