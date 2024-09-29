@@ -17,15 +17,19 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/explore-strategy" element={<ExploreStrategy />} />
-          <Route path="/travel-tools" element={<TravelTools />} />
-          <Route path="/sports-hospitality" element={<SportsHospitality />} />
-          <Route path="/online-education" element={<OnlineEducation />} />
-          <Route path="/entrepreneurship" element={<Entrepreneurship />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          <Navigation />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/explore-strategy" element={<ExploreStrategy />} />
+              <Route path="/travel-tools" element={<TravelTools />} />
+              <Route path="/sports-hospitality" element={<SportsHospitality />} />
+              <Route path="/online-education" element={<OnlineEducation />} />
+              <Route path="/entrepreneurship" element={<Entrepreneurship />} />
+            </Routes>
+          </main>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
