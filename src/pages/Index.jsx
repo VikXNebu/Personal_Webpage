@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GlobeIcon, TrendingUpIcon, PlaneIcon, BookOpenIcon, BriefcaseIcon, TrophyIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Navigation from '../components/Navigation';
 
 const Index = () => {
   const variants = {
