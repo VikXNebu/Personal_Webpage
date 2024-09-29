@@ -11,7 +11,6 @@ const Navigation = () => {
         <li><Link to="/sports-hospitality" className="hover:text-blue-300">Sports Hospitality</Link></li>
         <li><Link to="/online-education" className="hover:text-blue-300">Online Education</Link></li>
         <li><Link to="/entrepreneurship" className="hover:text-blue-300">Entrepreneurship</Link></li>
-        <li><Link to="/newsletter-signup" className="hover:text-blue-300">Newsletter Signup</Link></li>
       </ul>
     </nav>
   );
